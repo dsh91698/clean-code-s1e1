@@ -5,18 +5,18 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix-wrapper {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.matrix-wrapper img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.matrix-wrapper .more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -26,7 +26,7 @@ body {
   }
 }
 
-.centered-main-page-element {
+.todo-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
