@@ -21,9 +21,11 @@ body {
 }
 
 @media (max-width:768px) {
+
   .matrix-wrapper {
     text-align: center;
   }
+  
 }
 
 .todo-wrapper {
