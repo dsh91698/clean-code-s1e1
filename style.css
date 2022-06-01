@@ -21,7 +21,7 @@ body {
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .matrix-wrapper {
     text-align: center;
   }
 }
