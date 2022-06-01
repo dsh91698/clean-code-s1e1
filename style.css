@@ -111,7 +111,7 @@ input#new-task {
 }
 
 /* Task list */
-li.regular-mode {
+li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
