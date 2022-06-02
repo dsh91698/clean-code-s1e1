@@ -1,19 +1,82 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Todo App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href=""> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+
+<body class="main">
+  <!--[if lt IE 7]>
+            <p class="browsehappy">
+            You are using an <strong>outdated</strong> browser. 
+            Please <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
+    <![endif]-->
+
+  <header class="matrix-wrapper">
+    <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+
+  <section class="todo-wrapper">
+    <!-- <p id="topSectionForAddingElementToList"> -->
+    <div class="top-section-for-adding" id="top-section-for-adding-element-to-list">
+      <label for="new-task">Add Item</label>
+    <div class="task-row-wrapper">
+      <input id="new-task" class="task" type="text">
+      <button>Add</button>
+    </div>
+    </div>
+
+    <h3 class="todo-header">Todo</h3>
+    <ul id="incomplete-tasks">
+      <li class="regular-mode">
+        <input type="checkbox">
+        <label class="task">Pay Bills</label>
+        <input type="text" class="task">
+        <button class="edit">Edit</button>
+        <button class="delete">
+          <img src="./remove.svg" alt="remove">
+        </button>
+      </li>
+      <li class="edit-mode">
+        <input type="checkbox">
+        <label class="task">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="task">
+        <button class="edit">Save</button>
+        <button class="delete">
+          <img src="./remove.svg" alt="remove">
+        </button>
+      </li>
+    </ul>
+
+    <h3>Completed</h3>
+    <ul id="completed-tasks">
+      <li>
+        <input type="checkbox" checked>
+        <label class="task">See the Doctor</label>
+        <input type="text" class="task">
+        <button class="edit">Edit</button>
+        <button class="delete">
+          <img src="./remove.svg" alt="remove">
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <script src="app.js" async defer></script>
+
 </body>
+
 </html>
